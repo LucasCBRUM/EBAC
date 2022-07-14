@@ -123,37 +123,6 @@
                     border-radius: 50%;
                     display: inline-flex;
             }
-            
-            .MSGBox {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                width: 242px;
-                border-radius: 10px;
-                background-color: #eee;
-                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
-            }
-
-            .MSGBox p {
-                line-height: 1.5;
-                padding: 10px 20px;
-                color: #333;
-                padding-left: 82px;
-                background-position: 25px center;
-                background-repeat: no-repeat;
-            }
-
-            .MSGBox button {
-                background: none;
-                border: none;
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 1.1rem;
-                color: #aaa;
-            }
-
 			
         </style>
 		<meta charset = "utf-8">
@@ -208,11 +177,11 @@
                     </div>
                     <div>
                         <p>
-                            <label>My Social Midias</label><br>
-                            <button type="button" id="insta">Instagram</button>
-                            <button type="button" id="Git">Github</button>
-                            <button type="button" id="linkd">Linkedin</button>
-                            <button type="button" id="Whats">Whatsapp</button>
+                            <label>Redes Sociais</label><br>
+                            <a href="https://www.instagram.com/lucas_comparssi/"><button type="button" id="insta">Instagram Pessoal</button></a>
+                            <a href="https://github.com/LucasCBRUM"><button type="button" id="Git">Github</button></a>
+                            <a href=""><button type="button" id="linkd">Linkedin</button></a>
+                            <a href=""><button type="button" id="Whats">Whatsapp</button></a>
                         </p>
                     </div>
                     <div>
@@ -220,135 +189,6 @@
             </article>
 
         </section>
-        <footer>Developed by Lucas</footer>
+        <footer>Desenvolvido por Lucas</footer>
 	</body>
-    <script>
-
-        const btn1 = document.getElementById("insta");
-        btn1.addEventListener('click', () => displayMessage('@Lucas_Comparssi', 'chat'));
-        
-        function displayMessage(msgText,msgType) {
-            const html = document.querySelector('html');
-    
-            const panel = document.createElement('div');
-            panel.setAttribute('class','MSGBox');
-            html.appendChild(panel);
-    
-            const msg = document.createElement('p');
-            msg.textContent = msgText;
-            panel.appendChild(msg);
-    
-            const closeBtn = document.createElement('button');
-            closeBtn.textContent = 'x';
-            panel.appendChild(closeBtn);
-    
-            closeBtn.onclick = function() {
-                panel.parentNode.removeChild(panel);
-            }
-
-            if(msgType === 'warning') {
-                panel.style.backgroundColor = 'red';
-            } else if(msgType === 'chat') {
-                panel.style.backgroundColor = 'aqua';
-            } else {
-                msg.style.paddingLeft = '20px';
-            }
-        }
-
-        const btn3 = document.getElementById("linkd");
-            btn3.addEventListener('click', () => displayMessage('Lucas Brum', 'chat'));
-
-        function displayMessage(msgText,msgType) {
-            const html3 = document.querySelector('html');
-
-        const panel3 = document.createElement('div');
-            panel3.setAttribute('class','MSGBox');
-            html3.appendChild(panel3);
-
-        const msg3 = document.createElement('p');
-            msg3.textContent = msgText;
-            panel3.appendChild(msg3);
-
-        const closeBtn3 = document.createElement('button');
-            closeBtn3.textContent = 'x';
-            panel3.appendChild(closeBtn3);
-
-        closeBtn.onclick = function() {
-            panel3.parentNode.removeChild(panel3);
-        }
-
-        if(msgType === 'warning') {
-            panel3.style.backgroundColor = 'white';
-        } else if(msgType === 'chat') {
-            panel3.style.backgroundColor = 'blue';
-        } else {
-            msg3.style.paddingLeft = '20px';
-            }
-        }
-
-        const btn4 = document.getElementById("Whats");
-            btn4.addEventListener('click', () => displayMessage('(51)9 9505-4435', 'chat'));
-
-        function displayMessage(msgText,msgType) {
-            const html4 = document.querySelector('html');
-
-        const panel4 = document.createElement('div');
-            panel4.setAttribute('class','MSGBox');
-            html4.appendChild(panel4);
-
-        const msg4 = document.createElement('p');
-            msg4.textContent = msgText;
-            panel4.appendChild(msg4);
-
-        const closeBtn4 = document.createElement('button');
-            closeBtn4.textContent = 'x';
-            panel4.appendChild(closeBtn2);
-
-        closeBtn4.onclick = function() {
-            panel4.parentNode.removeChild(panel4);
-        }
-
-        if(msgType === 'warning') {
-            panel4.style.backgroundColor = 'red';
-        } else if(msgType === 'chat') {
-            panel4.style.backgroundColor = 'aqua';
-        } else {
-            msg4.style.paddingLeft = '20px';
-            }
-        }
-
-
-        const btn2 = document.getElementById("Git");
-            btn2.addEventListener('click', () => displayMessage('LucasCBRUM', 'chat'));
-
-        function displayMessage(msgText,msgType) {
-            const html2 = document.querySelector('html');
-
-        const panel2 = document.createElement('div');
-            panel2.setAttribute('class','MSGBox');
-            html2.appendChild(panel2);
-
-        const msg2 = document.createElement('p');
-            msg2.textContent = msgText;
-            panel2.appendChild(msg2);
-
-        const closeBtn2 = document.createElement('button');
-            closeBtn2.textContent = 'x';
-            panel2.appendChild(closeBtn2);
-
-        closeBtn2.onclick = function() {
-            panel2.parentNode.removeChild(panel2);
-        }
-
-        if(msgType === 'warning') {
-            panel2.style.backgroundColor = 'red';
-        } else if(msgType === 'chat') {
-            panel2.style.backgroundColor = 'aqua';
-        } else {
-            msg2.style.paddingLeft = '20px';
-            }
-        }
-        
-
-    </script>
 </html>
