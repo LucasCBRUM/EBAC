@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>
+		HTML - Layouts
+		</title>
+		<meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        
+			* {
+			box-sizing: border-box;
+			}
+
+			body {
+                font-family: Arial, Helvetica, sans-serif;  
+			}
+
+			/* Style the header */
+			header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+                float: left;
+                width: 30%;
+                
+                background: #ccc;
+                padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+                list-style-type: none;
+                padding: 0;
+			}
+            
+            input[type=submit] {
+                background: #0b5326;
+                color: white;
+                text-align: center;
+                opacity: 0.6;
+            }
+            
+            input[type=text] {
+                background: white;
+                color: black;
+                text-align: left;
+                box-shadow: 3px 3px 3px #415540;
+                height: 33px;
+                font-family: 'Times New Roman', Times, serif;
+                opacity: 0.6;
+                border: 3px solid#0b5326;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                }
+
+                input[type=email] {
+                background: white;
+                color: black;
+                text-align: left;
+                box-shadow: 3px 3px 3px #415540;
+                height: 33px;
+                font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+                opacity: 0.6;
+                border: 3px solid#0b5326;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                }
+
+			article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+                background: #ccc;
+                content: "";
+                display: table;
+                clear: both;
+			}
+            
+			/* Style the footer */
+			footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			nav, article 
+                {
+                    width: 100%;
+                    height: auto;
+                }
+			}
+			
+        </style>
+	</head>
+	<body>
+        <header>
+            <h2>Talk with us</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./myhomepage.html">Home</a></li>
+                    <li><a href="./myresume.html">My Resume</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <article>
+
+                <h1>Contact</h1>
+                <p>Fill the fields below</p>
+            
+                <form method="post">
+                    <div>
+                        <label for="nome">Name:</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="mensagem">Message:</label><br>
+                        <textarea type="email" name="mensagem" id="mensagem" rows="10" cols="30" placeholder="Descreva aqui"></textarea>    
+                    </div>
+                    <div>
+                        <p>
+                            <label>What languages do you prefer?</label><br>
+                            <input type="radio" name="linguagens" value="html"> HTML
+                            <input type="radio" name="linguagens" value="CSS"> CSS
+                            <input type="radio" name="linguagens" value="JavaScript"> JavaScript 
+                            <input type="radio" name="linguagens" value="Delphi"> Delphi 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label>What languages do you know?</label><br>
+                            <input type="checkbox" name="linguagens"> HTML
+                            <input type="checkbox" name="linguagens"> CSS
+                            <input type="checkbox" name="linguagens"> JavaScript 
+                            <input type="checkbox" name="linguagens"> Delphi 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label>What is your favorite color?</label><br>
+                            <select>
+                                <option value="Azul" selected >Azul</option>
+                                <option value="Verde">Verde</option>
+                                <option value="Vermelho">Vermelho</option>
+                            </select>
+                        </p>
+                    </div>
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+                </form>
+            </article>
+
+        </section>
+        <footer>Desenvolved by Lucas</footer>
+	</body>
+</html>
