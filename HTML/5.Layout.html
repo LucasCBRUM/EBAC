@@ -83,7 +83,7 @@
         </style>
 	</head>
 	<body>
-        <header>
+        <header id="header">
             <h2>Layout</h2>
         </header>
         <section>
@@ -91,8 +91,9 @@
                 <ul>
                     <li><a href="./myhomepage.html">Pagina Principal</a></li>
                     <li><a href="./5.Layout.html">Sobre</a></li>
-                    <li><a href="./6.fale conosco.html">Contato</a></li>
-                    <li><input type=button onclick="class footer {backgroundColor = #FFFFFF;}"></li>
+                    <li><a href="./6.faleconosco.html">Contato</a></li>
+                    <li><input type=button value="Cor Padrão" onclick="color('#2251B2')"></li>
+                    <li><input type=button value="Cor Escura" onclick="color('#666')"></li>
                 </ul>
             </nav>
             <article>
@@ -122,6 +123,18 @@
             </article>
 
         </section>
-        <footer class="footer">Desenvolvido por Lucas</footerc>
+        <footer id="footer">Desenvolvido por Lucas</footerc>
+        
+        <script>
+            function color(col){
+                    document.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+            function ExColor(col){
+                    cument.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+        </script>
+
 	</body>
 </html>

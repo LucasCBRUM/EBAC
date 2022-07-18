@@ -37,6 +37,7 @@
 			nav {
                 float: left;
                 width: 30%;
+                height: 100%;
                 
                 background: #ccc;
                 padding: 20px;
@@ -105,11 +106,11 @@
             }
 
 			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-			@media (max-width: 600px) {
+			@media (max-width: 100%) {
 			nav, article 
                 {
                     width: 100%;
-                    height: auto;
+                    height:max-content
                 }
 			}
 
@@ -122,6 +123,16 @@
                     border-color: #0b5326;
                     border-radius: 50%;
                     display: inline-flex;
+                    vertical-align: center;
+            }
+
+            .MainText{
+                display: flexbox;
+                width :100%;
+                align-self: center;
+                position: relative;
+                Font-size: 20px;
+                Font-family:Helvetica;
             }
 			
         </style>
@@ -129,8 +140,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-        <header charset="utf-8">
-            <h2 style="color: white;">Full-Stack Developer</h2>
+        <header charset="utf-8" id="header">
+            <h2 style="color: white;">Desenvolvedor Full-Stack</h2>
         </header>
         <section >
             <nav>
@@ -141,12 +152,16 @@
                     <li><a href="./3.Formatacao.html">3.Formatacao</a></li>
                     <li><a href="./4.Tabelas.html">4.Tabelas</a></li>
                     <li><a href="./5.Layout.html">5.Layout</a></li>
-                    <li><a href="./6. fale conosco.html">6.fale conosco</a></li>
+                    <li><a href="./6.faleconosco.html">6.fale conosco</a></li>
+                    <li><input type=button value="Cor Padrão" onclick="color('#2251B2')"></li>
+                    <li><input type=button value="Cor Escura" onclick="color('#666')"></li>
                 </ul>
             </nav>
             <article>
                 <div >
-                    <h1 style="font-family: Helvetica; color: black; font-size: 230%; align-items: center; position: relative; margin-left: 250px;">Pagina Principal</h1>
+                    <div>
+                        <h1 class ="MainText">Pagina Principal</h1>
+                    </div>
                     <div style="display: flex; align-items: center;">
                         <img class="roudend-image" src="./Screenshot_1.png" alt="Profile Photo">
                         <h2 style="Position:center; padding-left: 5px;">
@@ -189,6 +204,16 @@
             </article>
 
         </section>
-        <footer>Desenvolvido por Lucas</footer>
+        <footer id="footer">Desenvolvido por Lucas</footer>
+        <script>
+            function color(col){
+                    document.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+            function ExColor(col){
+                    cument.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+        </script>
 	</body>
 </html>
