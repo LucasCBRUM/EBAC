@@ -1,11 +1,29 @@
-* {
+/*EM => Elemente Master*/
+/*REM -> Root Element Master*/
+
+* {     /*Seletor universal*/
 box-sizing: border-box;
 }
 
-body {
-font-family: Arial, Helvetica, sans-serif;  
+html{
+margin: 0;
+padding: 0;
 }
 
+body {
+font-family: Helvetica; 
+background-color: #2251B2;
+}
+
+a { 
+color: black;
+text-decoration: none;
+
+}
+
+#primeiro-link a {
+color: red;
+}
 button {
 background-color: #2251B2;
 opacity: 0.5;
@@ -39,6 +57,13 @@ padding: 20px;
 nav ul {
 list-style-type: none;
 padding: 0;
+height: 37.2rem;
+width: 100%;
+}
+
+[type="button"]{
+    position: relative;
+    float : inline-start;
 }
 
 input[type=submit] {

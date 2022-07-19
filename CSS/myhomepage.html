@@ -8,14 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css" type="text/css">
 	</head>
-	<body>
+	<body id="body">
         <header charset="utf-8" id="header">
             <h2 style="color: white;">Curso Engenheiro Front-End EBAC</h2>
         </header>
         <section >
             <nav>
                 <ul>
-                    <li><a href="./myhomepage.html">Pagina Principal</a></li>
+                    <li id="primeiro-link"><a href="./myhomepage.html">Pagina Principal</a></li>
                     <li><a href="./1.Introdução HTML.html">1. Introdução HTML</a></li>
                     <li><a href="./2.Listas e Links.html">2.Listas e Links</a></li>
                     <li><a href="./3.Formatacao.html">3.Formatacao</a></li>
@@ -80,10 +80,12 @@
             function color(col){
                     document.getElementById("header").style.backgroundColor=col;
                     document.getElementById("footer").style.backgroundColor=col;
+                    document.getElementById("body").style.backgroundColor=col;
             }
             function ExColor(col){
                     cument.getElementById("header").style.backgroundColor=col;
                     document.getElementById("footer").style.backgroundColor=col;
+                    document.getElementById("body").style.backgroundColor=col;
             }
         </script>
 	</body>
