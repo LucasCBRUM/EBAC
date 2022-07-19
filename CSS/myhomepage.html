@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>
+		HTML - Layouts
+		</title>
+		<meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+	</head>
+	<body>
+        <header charset="utf-8" id="header">
+            <h2 style="color: white;">Curso Engenheiro Front-End EBAC</h2>
+        </header>
+        <section >
+            <nav>
+                <ul>
+                    <li><a href="./myhomepage.html">Pagina Principal</a></li>
+                    <li><a href="./1.Introdução HTML.html">1. Introdução HTML</a></li>
+                    <li><a href="./2.Listas e Links.html">2.Listas e Links</a></li>
+                    <li><a href="./3.Formatacao.html">3.Formatacao</a></li>
+                    <li><a href="./4.Tabelas.html">4.Tabelas</a></li>
+                    <li><a href="./5.Layout.html">5.Layout</a></li>
+                    <li><a href="./6.faleconosco.html">6.fale conosco</a></li>
+                    <li><input type=button value="Cor Padrão" onclick="color('#2251B2')"></li>
+                    <li><input type=button value="Cor Escura" onclick="color('#666')"></li>
+                </ul>
+            </nav>
+            <article>
+                <div >
+                    <div style="text-align:center">
+                        <h1 class ="MainText">Pagina Principal</h1>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <img class="roudend-image" src="./Screenshot_1.png" alt="Foto de Perfil">
+                        <h2 style="padding-left: 5px;">
+                        Lucas Comparssi Brum de Oliveira
+                        <p style="font-size: 18px;"><i>Desenvolvedor Full-Stack</i></p>
+                        </h2>
+                    </div>
+                </div>
+                <div style="padding: 10px;">
+                    <p>
+                        Formado em Eletrônica pela Fundação Escola Técnica Liberato Salzano Vieira da Cunha.
+                    </p>
+                    <p>
+                        Atualmente trabalho como desenvolvedor Full-Stack, atuo com Delphi/Pascal para front-end e PostgreSQL como backend/banco de dados. 
+                    </p>
+                    <p>
+                        Mas meu sonho sempre foi desenvolvimento Front-end, com esse intuito me inscrevi no curso de Engenharia Front-end da EBAC.
+                    </p>
+                </div>
+                <form method="post">
+                        <p>
+                            <label>Meu Estilo de Trabalho</label><br>
+                                <ul>
+                                    <li>Metodico</li>
+                                    <li>Amigavel</li>
+                                    <li>Organizado</li>
+                                    <li>Pontual</li>
+                                </ul>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label>Redes Sociais</label><br>
+                            <a href="https://www.instagram.com/lucas_comparssi/"><button type="button" id="insta">Instagram</button></a>
+                            <a href="https://github.com/LucasCBRUM"><button type="button" id="Git">Github</button></a>
+                            <a href="https://www.linkedin.com/in/lucas-comparssi-brum-de-oliveira-6808a8205/"><button type="button" id="linkd">Linkedin</button></a>
+                            <a href="https://wa.me/+5551995054435"><button type="button" id="Whats">Whatsapp</button></a>
+                        </p>
+                    </div>
+                    <div>
+                </form>
+            </article>
+
+        </section>
+        <footer id="footer">Desenvolvido por Lucas</footer>
+        <script>
+            function color(col){
+                    document.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+            function ExColor(col){
+                    cument.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("footer").style.backgroundColor=col;
+            }
+        </script>
+	</body>
+</html>
