@@ -1,0 +1,14 @@
+section div:first-child {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+  section div:last-child {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: -130px;
+    margin-left: 20px;
+  }

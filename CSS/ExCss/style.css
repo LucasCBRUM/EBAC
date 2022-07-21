@@ -1,0 +1,18 @@
+header {
+   /* background-color: #2251B2;*/
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+header div:first-child{
+    background-color: red;
+    position: relative;
+  }
+
+header div:last-child{
+    background-color: blue;
+    position: relative;
+    margin-top: -130px;
+    margin-left: 20px;
+  }
