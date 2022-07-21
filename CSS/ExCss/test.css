@@ -1,10 +1,10 @@
-section div:first-child {
+header div:first-child {
     background-color: red;
     width: 150px;
     height: 150px;
     position: relative;
   }
-  section div:last-child {
+  header div:last-child {
     background-color: blue;
     width: 150px;
     height: 150px;
