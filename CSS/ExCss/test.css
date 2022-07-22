@@ -1,14 +1,61 @@
-section div:first-child {
-    background-color: red;
-    width: 150px;
-    height: 150px;
-    position: relative;
+  /* Style the header */
+  .Cabecalho {
+    background-color: #2251B2;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    width: auto;
+    height: 190px;
+    }
+
+    img{
+      width: 160px;
+      height: 160px;
+      padding: none;
+      display: flex;
+      float: left; 
+      position: relative;
+      margin-bottom: 160px;
+      margin-left: -50px;
+    }
+
+.HProfile{
+    margin-left: 15rem;
+    margin-top: -3.5rem;
+    display: flex;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    position: center;
+    padding: 2rem;
   }
-  section div:last-child {
-    background-color: blue;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    margin-top: -130px;
-    margin-left: 20px;
-  }
+
+.miniHeader{
+  list-style: none;
+  display: flex;
+  position: center;
+  margin-top: -40px;
+  background-color: white;
+  border-radius: 8px;
+  height: 8rem;
+}
+
+.Photo{
+  margin-top: -70px;
+  margin-left: 20px;
+  float:  left;
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border: 3px solid;
+  border-color: #0b5326;
+  border-radius: 50%;
+  display: inline-flex;
+  vertical-align: center;
+}
+
+body{
+  background-color: white;
+}

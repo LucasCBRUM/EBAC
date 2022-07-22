@@ -1,5 +1,6 @@
-header {
-   /* background-color: #2251B2;*/
+  /* Style the header */
+  header {
+    background-color: #2251B2;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -7,6 +8,7 @@ header {
     }
 header div:first-child{
     background-color: red;
+
     position: relative;
   }
 
@@ -16,3 +18,160 @@ header div:last-child{
     margin-top: -130px;
     margin-left: 20px;
   }
+
+
+
+
+  /*EM => Elemente Master*/
+/*REM -> Root Element Master*/
+
+* {     /*Seletor universal*/
+  box-sizing: border-box;
+  }
+  
+  html{
+  margin: 0;
+  padding: 0;
+  }
+  
+  body {
+  font-family: Helvetica; 
+  background-color: #2251B2;
+  }
+  
+  a { 
+  color: black;
+  text-decoration: none;
+  
+  }
+  
+  #primeiro-link a {
+  color: red;
+  }
+  button {
+  background-color: #2251B2;
+  opacity: 0.5;
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 0%;
+  border-color: #2251B2;
+  }
+  
+  /* Style the header */
+  header {
+  background-color: #2251B2;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+  float: left;
+  width: 30%;
+  height: 100%;
+  
+  background: #ccc;
+  padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+  list-style-type: none;
+  padding: 0;
+  height: 37.2rem;
+  width: 100%;
+  }
+  
+  [type="button"]{
+      position: relative;
+      float : inline-start;
+  }
+  
+  input[type=submit] {
+  background: #0b5326;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  }
+  
+  input[type=text] {
+  background: white;
+  color: black;
+  text-align: left;
+  box-shadow: 3px 3px 3px #415540;
+  height: 33px;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0.6;
+  border: 3px solid#0b5326;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  }
+  
+  input[type=email] {
+  background: white;
+  color: black;
+  text-align: left;
+  box-shadow: 3px 3px 3px #415540;
+  height: 33px;
+  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0.6;
+  border: 3px solid#0b5326;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  }
+  
+  article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+  background-color: #2251B2;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 100%) {
+  nav, article 
+  {
+  width: 100%;
+  height:max-content
+  }
+  }
+  
+  .roudend-image{
+  float:  left;
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border: 3px solid;
+  border-color: #0b5326;
+  border-radius: 50%;
+  display: inline-flex;
+  vertical-align: center;
+  }
+  
+  .MainText{
+  width :100%;
+  align-self: center;
+  position: relative;
+  Font-size: 45px;
+  Font-family:Helvetica;
+  }
+  
