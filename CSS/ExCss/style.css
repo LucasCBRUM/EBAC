@@ -1,24 +1,84 @@
   /* Style the header */
-  header {
+  .Cabecalho {
     background-color: #2251B2;
-    padding: 30px;
+    display: flex;
+    list-style: none;
     text-align: center;
+    align-items: center;
     font-size: 35px;
+    text-align: center;
+    position: relative;
+    align-items: center; 
     color: white;
+    width: auto;
+    height: 190px;
+    overflow: hidden;
     }
-header div:first-child{
-    background-color: red;
 
-    position: relative;
+    header{
+      text-align: center;
+      width : 100%;
+      padding-left: 20px;
+    }
+
+
+    /*  display: flex;
+  justify-content: center;
+  align-items: center;*/
+    img{
+      width: 160px;
+      height: 160px;
+      padding: none;
+      display: flex;
+      float: left; 
+      position: relative;
+      margin-bottom: 160px;
+      margin-left: -50px;
+    }
+
+.HProfile{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    position: center;
+    padding: 2rem;
   }
 
-header div:last-child{
-    background-color: blue;
-    position: relative;
-    margin-top: -130px;
-    margin-left: 20px;
-  }
+.miniHeader{
+  list-style: none;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  height: 8rem;
+  margin-top:-40px;
+  width: 100%;
+}
 
+.Nome {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  margin-left: 190px;
+}
+
+.Photo{
+  margin-top: -70px;
+  margin-left: 20px;
+  height: 150px;
+  position: absolute;
+  width: 150px;
+  background-color: #bbb;
+  border: 5px solid;
+  border-color: #2251B2;
+  border-radius: 50%;
+  vertical-align: center;
+}
+
+body{
+  background-color: white;
+}
 
 
 
@@ -27,6 +87,7 @@ header div:last-child{
 
 * {     /*Seletor universal*/
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   }
   
   html{
@@ -34,10 +95,6 @@ header div:last-child{
   padding: 0;
   }
   
-  body {
-  font-family: Helvetica; 
-  background-color: #2251B2;
-  }
   
   a { 
   color: black;
@@ -58,14 +115,6 @@ header div:last-child{
   border-color: #2251B2;
   }
   
-  /* Style the header */
-  header {
-  background-color: #2251B2;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  }
   
   /* Create two columns/boxes that floats next to each other */
   nav {
@@ -127,7 +176,13 @@ header div:last-child{
   float: left;
   padding: 20px;
   width: 70%;
+  height: 41.7rem;
   background-color: #f1f1f1;
+  }
+  
+  section {
+    position: relative;
+    margin-top: -45px;
   }
   
   /* Clear floats after the columns */
@@ -136,6 +191,7 @@ header div:last-child{
   content: "";
   display: table;
   clear: both;
+  
   }
   
   /* Style the footer */
@@ -144,14 +200,16 @@ header div:last-child{
   padding: 10px;
   text-align: center;
   color: white;
+  position: sticky;
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 100%) {
   nav, article 
   {
+
   width: 100%;
-  height:max-content
+  height: 100%;
   }
   }
   
