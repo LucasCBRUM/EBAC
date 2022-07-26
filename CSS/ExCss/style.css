@@ -40,27 +40,31 @@
     display: flex;
     text-align: center;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
-    position: center;
-    padding: 2rem;
+    font-family: Helvetica;    
+    position: relative;
+    padding: 3rem;
   }
 
 .miniHeader{
   list-style: none;
-  display: flex;
   position: relative;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 30px;
   text-align: center;
   height: 8rem;
   margin-top:-40px;
   width: 100%;
+  height: rem;
 }
 
 .Nome {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-family: Helvetica; 
   margin-left: 190px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: visible;
 }
 
 .Photo{
@@ -87,7 +91,7 @@ body{
 
 * {     /*Seletor universal*/
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-family: Helvetica; 
   }
   
   html{
@@ -103,7 +107,7 @@ body{
   }
   
   #primeiro-link a {
-  color: red;
+  color: #2251B2;
   }
   button {
   background-color: #2251B2;
@@ -113,6 +117,7 @@ body{
   font-family: sans-serif;
   border-radius: 0%;
   border-color: #2251B2;
+  border-radius: 20px;
   }
   
   
@@ -124,6 +129,8 @@ body{
   
   background: #ccc;
   padding: 20px;
+  
+  border-radius: 20px;
   }
   
   /* Style the list inside the menu */
@@ -132,44 +139,8 @@ body{
   padding: 0;
   height: 37.2rem;
   width: 100%;
-  }
   
-  [type="button"]{
-      position: relative;
-      float : inline-start;
-  }
-  
-  input[type=submit] {
-  background: #0b5326;
-  color: white;
-  text-align: center;
-  opacity: 0.6;
-  }
-  
-  input[type=text] {
-  background: white;
-  color: black;
-  text-align: left;
-  box-shadow: 3px 3px 3px #415540;
-  height: 33px;
-  font-family: 'Times New Roman', Times, serif;
-  opacity: 0.6;
-  border: 3px solid#0b5326;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  }
-  
-  input[type=email] {
-  background: white;
-  color: black;
-  text-align: left;
-  box-shadow: 3px 3px 3px #415540;
-  height: 33px;
-  font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
-  opacity: 0.6;
-  border: 3px solid#0b5326;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  border-radius: 20px;
   }
   
   article {
@@ -178,11 +149,15 @@ body{
   width: 70%;
   height: 41.7rem;
   background-color: #f1f1f1;
+  
+  border-radius: 20px;
   }
   
   section {
     position: relative;
-    margin-top: -45px;
+    margin-top: -35px;
+    background-color: #2251B2
+  
   }
   
   /* Clear floats after the columns */
@@ -192,6 +167,8 @@ body{
   display: table;
   clear: both;
   
+  border-radius: 20px;
+  
   }
   
   /* Style the footer */
@@ -200,7 +177,9 @@ body{
   padding: 10px;
   text-align: center;
   color: white;
-  position: sticky;
+  position: static;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -232,4 +211,50 @@ body{
   Font-size: 45px;
   Font-family:Helvetica;
   }
-  
+
+  input[type="button"]{
+    height: max-content;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #2251B2;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+input[type=submit] {
+background: #0b5326;
+color: white;
+text-align: center;
+opacity: 0.6;
+}
+
+input[type=text] {
+background: white;
+color: black;
+text-align: left;
+box-shadow: 3px 3px 3px #415540;
+height: 33px;
+font-family: 'Times New Roman', Times, serif;
+opacity: 0.6;
+border: 3px solid#0b5326;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+input[type=email] {
+background: white;
+color: black;
+text-align: left;
+box-shadow: 3px 3px 3px #415540;
+height: 33px;
+font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+opacity: 0.6;
+border: 3px solid#0b5326;
+margin-top: 8px;
+margin-bottom: 8px;
+}

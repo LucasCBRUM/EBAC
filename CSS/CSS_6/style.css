@@ -1,0 +1,54 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #ACECA1;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    background-color: #629460;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    list-style-type: none;
+}
+
+.headerText{
+    Color: #C9F2C7;
+    display: inline-block;
+    vertical-align: middle;
+}
+img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.buttonIMG{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+.buttonIMG:hover{
+    background-color: #629479;
+}
+
+
+
+
+
+/*Color palette
+#C9F2C7,
+#ACECA1,
+#96BE8C, 
+#629460,
+#243119,
+*/
+
+
