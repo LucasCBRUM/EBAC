@@ -8,13 +8,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css" type="text/css">
 	</head>
-    <body>
-        <header class="header">
-            <h1 class="headerText">Desenvolvedor Front-End</h1>  
-            <button class="buttonIMG"><img src="./lua-s-fundo.png"></button>
+    <body id="body">
+        <header class="header" id="header">
+            <h1 class="headerText">Desenvolvedor Front-End</h1> 
+            <button class="buttonIMG" onclick="colorDark('')"><img src="./lua-s-fundo.png"></button>
+            <button class="buttonIMG" onclick="colorLight('')"><img src="./nascer-do-sol-.png"></button>
         </header>   
+
+    <script>
+            function colorLight(head,body,text){
+                    document.getElementById("header").style.backgroundColor=head;
+                    document.getElementById("body").style.backgroundColor=body;
+            }
+            function colorDark(head,body,text){
+                    document.getElementById("header").style.backgroundColor=head;
+                    document.getElementById("body").style.backgroundColor=body;
+            }
+    </script>   
     </body>
 </html>
-<script>
-
-</script>

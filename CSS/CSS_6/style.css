@@ -20,6 +20,7 @@ body{
     Color: #C9F2C7;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
 }
 img{
     width: 2rem;
@@ -27,16 +28,23 @@ img{
 }
 
 .buttonIMG{
-    display: inline-block;
+    display: flex;
+    float: right;
     vertical-align: middle;
     cursor: pointer;
     background-color: transparent;
     color: transparent;
     border: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
 }
 
 .buttonIMG:hover{
-    background-color: #629479;
+    background-color: #629460;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px black;
+    border: 1px solid black;
 }
 
 
