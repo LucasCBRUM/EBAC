@@ -37,14 +37,40 @@ img{
     border: none;
     margin-top: 1rem;
     margin-right: 1rem;
+    border-radius: 20px;
     padding: 0.5rem;
+    position: relative;
 }
 
 .buttonIMG:hover{
-    background-color: #629460;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px black;
-    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.buttonIMG:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.headerBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+li {
+    float: right;
+}
+
+li button {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    position: relative;
 }
 
 
