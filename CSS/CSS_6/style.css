@@ -3,7 +3,9 @@
 }
 
 body{
-    background-color: #ACECA1;
+    background-color: #72dd6f;
+    border-bottom: 2px solid #C9F2C7;
+    border-radius: 30px;
 }
 
 .header{
@@ -44,7 +46,7 @@ img{
 }
 
 .buttonIMG:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 .buttonIMG:active {
     background-color: #3e8e41;
@@ -79,6 +81,7 @@ li button {
 
 
 /*Color palette
+#72dd6f
 #C9F2C7,
 #ACECA1,
 #96BE8C, 
