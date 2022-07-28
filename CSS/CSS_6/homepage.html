@@ -12,7 +12,7 @@
         <header class="header" id="header">
             <ul class="headerBar">
             <li style="float:left; margin-left : 2rem;"><h1 class="headerText" id="h1">Desenvolvedor Front-End</h1></li> 
-            <li><button class="buttonIMG" onclick="colorLight('#629460','#72dd6f','#C9F2C7','#C9F2C7','transparent')" id="button1"><img src="./nascer-do-sol-.png"></button></li>
+            <li><button class="buttonIMG" onclick="colorLight('#629460','#72DD6F','#C9F2C7','#C9F2C7','transparent')" id="button1"><img src="./nascer-do-sol-.png"></button></li>
             <li><button class="buttonIMG" onclick="colorDark('#000000','#331E36','#FFFFFF','#FB3640')" id="button2"><img src="./lua-s-fundo.png"></button></li>
             </ul>
         </header>   
@@ -32,6 +32,8 @@
                     document.getElementById("h1").style.color=text;
                     document.getElementById("button1").style.backgroundColor=text;
                     document.getElementById("button2").style.backgroundColor=text;
+                    document.getElementById("button1").style.boxShadow=text;
+                    document.getElementById("button2").style.boxShadow=text;
                     document.getElementById("body").style.borderColor=border;
             }
     </script>   
