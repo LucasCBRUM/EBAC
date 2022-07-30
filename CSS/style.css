@@ -131,17 +131,6 @@ height:max-content
 }
 }
 
-.roudend-image{
-float:  left;
-height: 150px;
-width: 150px;
-background-color: #bbb;
-border: 3px solid;
-border-color: #0b5326;
-border-radius: 50%;
-display: inline-flex;
-vertical-align: center;
-}
 
 .MainText{
 width :100%;
@@ -150,3 +139,4 @@ position: relative;
 Font-size: 45px;
 Font-family:Helvetica;
 }
+

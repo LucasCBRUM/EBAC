@@ -9,19 +9,20 @@
         <link rel="stylesheet" href="./style.css" type="text/css">
 	</head>
 	<body id="body">
-        <header charset="utf-8" id="header">
-            <h2 style="color: white;">Curso Engenheiro Front-End EBAC</h2>
-            <div:first-child style="text-align:center">
-                <h1 class ="MainText">Pagina Principal</h1>
-            </div:first-child>
-            <div style="display: flex; align-items: center;">
-                <img class="roudend-image" src="./Screenshot_1.png" alt="Foto de Perfil">
-                <h2 style="padding-left: 5px;">
-                Lucas Comparssi Brum de Oliveira
-                <p style="font-size: 18px;"><i>Desenvolvedor Full-Stack</i></p>
-                </h2>
+        <div>
+            <div class="Cabecalho" id="header">
+                <img src="./image-removebg-preview.png">
+                <header > 
+                    <div > 
+                        <p>Desenvolvedor Front-End</p>
+                    </div> 
+                </header>
             </div>
-        </header>
+            <header class="miniHeader">
+                <img class="Photo" src="./Screenshot_1.png" id="photo">
+                <h1 class="Nome"> Lucas Comparssi Brum de Oliveira</h1>
+            </header>
+        </div>
         <section >
             <nav>
                 <ul>
@@ -78,12 +79,12 @@
             function color(col){
                     document.getElementById("header").style.backgroundColor=col;
                     document.getElementById("footer").style.backgroundColor=col;
-                    document.getElementById("body").style.backgroundColor=col;
+                    document.getElementById("photo").style.borderColor=col;
             }
             function ExColor(col){
-                    cument.getElementById("header").style.backgroundColor=col;
+                    document.getElementById("header").style.backgroundColor=col;
                     document.getElementById("footer").style.backgroundColor=col;
-                    document.getElementById("body").style.backgroundColor=col;
+                    document.getElementById("photo").style.borderColor=col;
             }
         </script>
 	</body>
