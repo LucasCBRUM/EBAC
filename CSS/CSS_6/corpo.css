@@ -1,0 +1,12 @@
+.cabecalho{
+    display: block;
+    box-sizing: border-box;
+    height: 90px;
+}
+.boxes{
+    background-color: #629460;
+    border-bottom: 2px solid white;
+    border-radius: 30px;
+    position: static;
+    padding: 4px;
+}
